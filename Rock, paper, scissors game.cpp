@@ -22,6 +22,18 @@ enChoice ReadUserChoice() {
 }
 
 
+string ReadComputerChoice() {
+
+    srand(time(0));
+
+    string choices[] = { "Rock", "Paper", "Scissors" };
+    string ComputerChoice = choices[rand() % 3];
+
+    return ComputerChoice;
+
+}
+
+
 bool AnotherRound() {
 
 
@@ -57,18 +69,6 @@ bool AnotherRound() {
 
     } while (true);
 
-
-}
-
-
-string ReadComputerChoice() {
-
-    srand(time(0));
-
-    string choices[] = { "Rock", "Paper", "Scissors" };
-    string ComputerChoice = choices[rand() % 3];
-
-    return ComputerChoice;
 
 }
 
