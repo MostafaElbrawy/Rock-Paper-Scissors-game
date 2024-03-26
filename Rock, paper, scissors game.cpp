@@ -208,10 +208,10 @@ void PlayRounds(int &UserWon,int &ComputerWon,int &NoWinner) {
     cout << "How many rounds do you want to play? \n";
     cin >> rounds;
 
-    for (int i = 1; i <= rounds; i++)
+    for (int round = 1; round <= rounds; round++)
     {
     
-     Game(i, UserWon, ComputerWon, NoWinner);
+     Game(round, UserWon, ComputerWon, NoWinner);
     
     }
 
